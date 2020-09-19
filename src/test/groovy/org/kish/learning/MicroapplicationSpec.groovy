@@ -1,6 +1,6 @@
 package org.kish.learning
 
-import groovy.transform.CompileStatic
+
 import io.micronaut.runtime.EmbeddedApplication
 import io.micronaut.test.annotation.MicronautTest
 import org.kish.learning.resource.GreetClient
@@ -8,7 +8,6 @@ import spock.lang.Specification
 
 import javax.inject.Inject
 
-@CompileStatic
 @MicronautTest
 class MicroapplicationSpec extends Specification {
 

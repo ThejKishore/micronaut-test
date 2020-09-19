@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: org.kish.learning
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [ annotation-api, app-name, cache-ehcache, data, data-jpa, docker, file-watch, gradle, http-client, java, java-application, jdbc-hikari, jib, logback, management, mysql, netty-server, openapi, readme, spock, testcontainers, tracing-zipkin, yaml ]

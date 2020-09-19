@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: microapplication
+  server:
+    port: 8989
+  caches:
+    my-cache:
+      maximumSize: 20
+
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/db
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 'password'
+    schema-generate: CREATE_DROP
+    dialect: MYSQL
+
+
+tracing:
+  zipkin:
+    enabled: true
+    http:
+      url: http://localhost:9411
+    sampler:
+      probability: 0.1
+
+jpa.default.properties.hibernate.hbm2ddl.auto: update

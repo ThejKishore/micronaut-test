@@ -1,0 +1,61 @@
+###
+GET http://localhost:8989/naut/greetings
+
+<> 2020-09-19T125059.200.txt
+<> 2020-09-18T072505.200.txt
+###
+GET http://localhost:8989/naut/greetings/thej
+
+<> 2020-09-19T125104.200.txt
+<> 2020-09-18T072554.200.txt
+
+###
+POST http://localhost:8989/naut/person
+Content-Type: application/json
+
+{
+"fname":"Shanaya",
+"lname":"Karuneegar",
+"email":"shanaya@gmail.com",
+"age":3
+}
+
+<> 2020-09-19T125123.200.json
+<> 2020-09-18T074823.200.json
+<> 2020-09-18T074448.500.json
+<> 2020-09-18T074422.415.json
+
+###
+GET http://localhost:8989/naut/person
+
+<> 2020-09-19T125131.200.json
+<> 2020-09-18T074854.200.json
+
+###
+GET http://localhost:8989/naut/person/1
+
+<> 2020-09-19T125141.200.json
+<> 2020-09-18T074929.200.json
+
+###
+GET http://localhost:8989/naut/person/lname/karuneegar
+
+<> 2020-09-19T010019.200.json
+<> 2020-09-19T125327.200.json
+<> 2020-09-18T080145.200.json
+<> 2020-09-18T080126.200.json
+<> 2020-09-18T075905.400.json
+
+###
+GET http://localhost:8989/naut/person/fname/Thej
+
+<> 2020-09-19T010314.200.json
+<> 2020-09-19T010039.200.json
+<> 2020-09-19T125942.200.json
+<> 2020-09-19T125929.200.json
+<> 2020-09-19T125917.200.json
+
+###
+GET http://localhost:8989/naut/person/email/shanaya@gmail.com
+
+<> 2020-09-19T010502.200.json
